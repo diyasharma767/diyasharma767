@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ChatBot Interface</title>
+</head>
+<body>
+    <h1>ChatBot Interface</h1>
+    <form method="post">
+        <label for="question">Ask me anything:</label><br>
+        <input type="text" id="question" name="question" value="{{ question }}"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    {% if answer %}
+    <h2>Answer:</h2>
+    <p>{{ answer }}</p>
+    {% endif %}
+</body>
+</html>
